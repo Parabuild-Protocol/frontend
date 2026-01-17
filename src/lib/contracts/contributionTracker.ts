@@ -4,7 +4,7 @@ import { CONTRIBUTION_TRACKER_ABI } from "../web3/abis";
 
 
 // Contract address (replace with actual deployed address)
-export const CONTRIBUTION_TRACKER_ADDRESS = process.env.NEXT_PUBLIC_CONTRIBUTION_TRACKER_ADDRESS || "0xFC7Eb8f2086207e36fe78ddd3e7D90ADFa042Bba";
+export const CONTRIBUTION_TRACKER_ADDRESS = process.env.CONTRIBUTION_TRACKER_ADDRESS || "0x33a2572eC2d46687835E533832ee81304AC91150";
 
 /**
  * ContributionType enum - MUST match contract exactly

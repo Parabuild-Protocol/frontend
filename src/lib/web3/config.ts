@@ -1,6 +1,6 @@
 // src/lib/web3/config.ts
 import { createAppKit } from "@reown/appkit/react";
-import { mainnet, sepolia } from "@reown/appkit/networks";
+import { base, baseSepolia } from "@reown/appkit/networks";
 import { WagmiAdapter } from "@reown/appkit-adapter-wagmi";
 import { QueryClient } from "@tanstack/react-query";
 
@@ -13,7 +13,7 @@ if (!projectId) {
 }
 
 // 2. Set up Wagmi adapter
-export const networks = [mainnet, sepolia];
+export const networks = [baseSepolia, base];
 
 export const wagmiAdapter = new WagmiAdapter({
   networks,
@@ -27,7 +27,6 @@ export const metadata = {
   url: "https://parabuild.xyz/",
   icons: ["https://parabuild.xyz/icon.png"],
 };
-
 
 export const createWeb3Modal = () => {
   return createAppKit({

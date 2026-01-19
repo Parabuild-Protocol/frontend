@@ -123,35 +123,6 @@ export const ContributionSubmitModal = ({
 
             <Separator />
 
-            {/* Backend ID */}
-            {backendId && (
-              <div className="space-y-2">
-                <h3 className="font-semibold text-sm">Unique Identifier (Nonce)</h3>
-                <div className="flex items-center gap-2 p-3 bg-muted rounded-lg">
-                  <code className="text-xs font-mono flex-1 break-all">
-                    {backendId}
-                  </code>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    onClick={() => handleCopy(backendId)}
-                    className="shrink-0"
-                  >
-                    {copied ? (
-                      <Check className="h-4 w-4 text-success" />
-                    ) : (
-                      <Copy className="h-4 w-4" />
-                    )}
-                  </Button>
-                </div>
-                <p className="text-xs text-muted-foreground">
-                  This unique ID will be recorded on the blockchain to prevent duplicate submissions
-                </p>
-              </div>
-            )}
-
-            <Separator />
-
             {/* Transaction Info */}
             <Alert>
               <Info className="h-4 w-4" />

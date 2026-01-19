@@ -2,7 +2,7 @@
 import axios from 'axios';
 import { BrowserProvider } from 'ethers';
 
-const API_BASE_URL = import.meta.env.NEXT_PUBLIC_API_URL || 'https://backend-u2ig.onrender.com';
+const API_BASE_URL = import.meta.env.NEXT_PUBLIC_API_URL || 'https://api.parabuild.xyz/';
 
 // Create axios instance
 const apiClient = axios.create({
